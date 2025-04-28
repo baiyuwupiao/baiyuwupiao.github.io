@@ -1,0 +1,62 @@
+.flex_container {
+    border: solid 5px rgb(32, 32, 32);
+    background: #777777;
+    height: 750px;
+    margin: 4%;
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    justify-content: center;
+}
+.Scard{
+    background: linear-gradient(to top, #ffba5b, #774d1d);
+    border-radius : 10px;
+    width: 160px;
+    height: 160px;
+    margin: 4px;
+}
+.Acard{
+    background: linear-gradient(to top, #6400b1, #d39cff);
+    border-radius : 10px;
+    width: 160px;
+    height: 160px;
+    margin: 4px;
+
+}
+.Scard > img{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+.Acard > img{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+.card-name {
+    width: 100%;
+    height: 20%;
+    background: #666;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+h3 {
+    text-align: center;
+}
+
+
+
