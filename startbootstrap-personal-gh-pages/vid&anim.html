@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Modern Business - Start Bootstrap Template</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Custom Google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet" />
+    <!-- Bootstrap icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+
+    <style>
+        .gallery-img {
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+        .gallery-img:hover {
+            transform: scale(1.05);
+        }
+
+        .modal-content {
+            background: rgba(0, 0, 0, 0.8);
+        }
+
+        #modalImage {
+            max-width: 90%;
+            max-height: 80vh;
+        }
+
+        #modalTitle {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body class="d-flex flex-column h-100 bg-light">
+<main class="flex-shrink-0">
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
+        <div class="container px-5">
+            <a class="navbar-brand" href="index.html"><span class="fw-bolder text-primary">BaiyUwUsHome</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
+                    <li class="nav-item"><a class="nav-link" href="index.html">首頁</a></li>
+                    <li class="nav-item"><a class="nav-link" href="art.html">靜態作品</a></li>
+                    <li class="nav-item"><a class="nav-link" href="vid&anim.html">動態作品</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">聯絡我</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Projects Section-->
+    <section class="py-5">
+        <div class="container px-5 mb-5">
+            <div class="text-center mb-5">
+                <h1 class="display-5 fw-bolder mb-0"><span class="text-gradient d-inline">動態作品</span></h1>
+            </div>
+            <div class="row gx-5 gy-5">
+                <!-- 影片 -->
+                <div class="col-6 col-md-3">
+                    <video class="img-fluid rounded-4 gallery-item" muted autoplay loop>
+                        <source src="assets/1.mp4" type="video/mp4">
+                    </video>
+                    <!-- 注意：video也要加data-type -->
+                    <div class="d-none" data-type="video" data-src="assets/video1.mp4" data-title="影片標題1"></div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <video class="img-fluid rounded-4 gallery-item" muted autoplay loop>
+                        <source src="assets/2.mp4" type="video/mp4">
+                    </video>
+                    <!-- 注意：video也要加data-type -->
+                    <div class="d-none" data-type="video" data-src="assets/video1.mp4" data-title="影片標題1"></div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <video class="img-fluid rounded-4 gallery-item" muted autoplay loop>
+                        <source src="assets/3.mp4" type="video/mp4">
+                    </video>
+                    <!-- 注意：video也要加data-type -->
+                    <div class="d-none" data-type="video" data-src="assets/video1.mp4" data-title="影片標題1"></div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <video class="img-fluid rounded-4 gallery-item" muted autoplay loop>
+                        <source src="assets/4.mp4" type="video/mp4">
+                    </video>
+                    <!-- 注意：video也要加data-type -->
+                    <div class="d-none" data-type="video" data-src="assets/video1.mp4" data-title="影片標題1"></div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <video class="img-fluid rounded-4 gallery-item" muted autoplay loop>
+                        <source src="assets/5.mp4" type="video/mp4">
+                    </video>
+                    <!-- 注意：video也要加data-type -->
+                    <div class="d-none" data-type="video" data-src="assets/video1.mp4" data-title="影片標題1"></div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <video class="img-fluid rounded-4 gallery-item" muted autoplay loop>
+                        <source src="assets/6.mp4" type="video/mp4">
+                    </video>
+                    <!-- 注意：video也要加data-type -->
+                    <div class="d-none" data-type="video" data-src="assets/video1.mp4" data-title="影片標題1"></div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <video class="img-fluid rounded-4 gallery-item" muted autoplay loop>
+                        <source src="assets/7.mp4" type="video/mp4">
+                    </video>
+                    <!-- 注意：video也要加data-type -->
+                    <div class="d-none" data-type="video" data-src="assets/video1.mp4" data-title="影片標題1"></div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Modal for Enlarged Image -->
+    <div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content bg-transparent border-0">
+                <div class="modal-body text-center position-relative">
+                    <button type="button" class="btn-close btn-close-white position-absolute top-0 end-0 m-3" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <img id="modalImage" class="img-fluid rounded-4" src="" alt="">
+                    <h5 id="modalTitle" class="text-white mt-3"></h5>
+                    <button id="prevBtn" class="btn btn-light position-absolute start-0 top-50 translate-middle-y ms-3">&lt;</button>
+                    <button id="nextBtn" class="btn btn-light position-absolute end-0 top-50 translate-middle-y me-3">&gt;</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<!-- About Section-->
+<section class="bg-light py-5">
+    <div class="container px-5">
+        <div class="row gx-5 justify-content-center">
+            <div class="col-xxl-8">
+                <div class="text-center my-5">
+                    <h2 class="display-5 fw-bolder"><span class="text-gradient d-inline">完整影片請至我的社群網站</span></h2>
+                    <div class="d-flex justify-content-center fs-2 gap-4">
+                        <a class="text-gradient" href="https://x.com/baiyupiao"><i class="bi bi-twitter"></i></a>
+                        <a class="text-gradient" href="https://www.instagram.com/baiyuwuhehh?igsh=NHh3N2diYXFuZDQ="><i class="bi bi-instagram"></i></a>
+                        <a class="text-gradient" href="https://www.youtube.com/c/BaiyuPiano%E7%99%BD%E7%BE%BD"><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</main>
+<!-- Footer-->
+<footer class="bg-white py-4 mt-auto">
+    <div class="container px-5">
+        <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+            <div class="col-auto"><div class="small m-0">BaiyUwUsHome 2025</div></div>
+            <div class="col-auto">
+                <a class="small" href="#!"></a>
+                <span class="mx-1"></span>
+                <a class="small" href="#!"></a>
+                <span class="mx-1"></span>
+                <a class="small" href="#!"></a>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- Bootstrap core JS-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Core theme JS-->
+<script src="js/scripts.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const galleryImages = document.querySelectorAll('.gallery-img');
+        const modalImage = document.getElementById('modalImage');
+        const modalTitle = document.getElementById('modalTitle');
+        const prevBtn = document.getElementById('prevBtn');
+        const nextBtn = document.getElementById('nextBtn');
+        const imageModal = new bootstrap.Modal(document.getElementById('imageModal'));
+        let currentIndex = 0;
+
+        function updateModal(index) {
+            modalImage.src = galleryImages[index].src;
+            modalTitle.textContent = galleryImages[index].getAttribute('data-title') || '';
+        }
+
+        galleryImages.forEach((img, index) => {
+            img.addEventListener('click', () => {
+                currentIndex = index;
+                updateModal(currentIndex);
+                imageModal.show();
+            });
+        });
+
+        prevBtn.addEventListener('click', () => {
+            currentIndex = (currentIndex - 1 + galleryImages.length) % galleryImages.length;
+            updateModal(currentIndex);
+        });
+
+        nextBtn.addEventListener('click', () => {
+            currentIndex = (currentIndex + 1) % galleryImages.length;
+            updateModal(currentIndex);
+        });
+
+        // 點擊背景可以關閉（Bootstrap 5 modal 已經預設支援 backdrop 點擊關閉）
+    });
+</script>
+</body>
+</html>
