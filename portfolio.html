@@ -1,0 +1,285 @@
+﻿<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>DByu工作室 - 作品</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+    <style>
+        .text-center {
+            text-align: center !important;
+        }
+        .py-5 {
+            padding-top: 3rem !important;
+            padding-bottom: 3rem !important;
+        }
+        .gx-5 {
+            --bs-gutter-x: 3rem;
+        }
+        .gy-5 {
+            --bs-gutter-y: 3rem;
+        }
+        .col-6 {
+            flex: 0 0 auto;
+            width: 50%;
+        }
+        .col-md-3 {
+            flex: 0 0 auto;
+            width: 25%;
+        }
+        .container,
+        .container-fluid,
+        .container-xxl,
+        .container-xl,
+        .container-lg,
+        .container-md,
+        .container-sm {
+            --bs-gutter-x: 1.5rem;
+            --bs-gutter-y: 0;
+            width: 100%;
+            padding-right: calc(var(--bs-gutter-x) * 0.5);
+            padding-left: calc(var(--bs-gutter-x) * 0.5);
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        @media (min-width: 576px) {
+            .container-sm, .container {
+                max-width: 540px;
+            }
+        }
+        @media (min-width: 768px) {
+            .container-md, .container-sm, .container {
+                max-width: 720px;
+            }
+        }
+        @media (min-width: 992px) {
+            .container-lg, .container-md, .container-sm, .container {
+                max-width: 960px;
+            }
+        }
+        @media (min-width: 1200px) {
+            .container-xl, .container-lg, .container-md, .container-sm, .container {
+                max-width: 1140px;
+            }
+        }
+        @media (min-width: 1400px) {
+            .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
+                max-width: 1320px;
+            }
+        }
+        .display-5 {
+            font-size: calc(1.425rem + 2.1vw);
+            font-weight: 300;
+            line-height: 1.2;
+        }
+        .img-fluid {
+            max-width: 100%;
+            height: auto;
+        }
+        .rounded-4 {
+            border-radius: var(--bs-border-radius-xl) !important;
+        }
+        .category-tab {
+            margin: 0 0.5rem;
+            padding: 0.5rem 1.2rem;
+            border: none;
+            background-color: #e0e0e0;
+            border-radius: 30px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+
+        .category-tab:hover {
+            background-color: #ccc;
+        }
+
+        .category-tab.active {
+            background-color: #333;
+            color: white;
+        }
+
+        .portfolio-item {
+            min-height: 350px; /* 讓欄位高度有個底，350px 可調 */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .portfolio-item img {
+            max-width: 100%;
+            max-height: 100%;
+            height: auto;
+            object-fit: contain; /* 確保圖片完整顯示 */
+        }
+        
+
+    </style>
+</head>
+<body>
+<header>
+    <div class="container nav-container">
+        <h1 class="logo">DByu工作室</h1>
+        <nav>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">首頁</a></li>
+                <li><a href="portfolio.html" class="active">作品</a></li>
+                <li><a href="contact.html">聯絡</a></li>
+            </ul>
+            <button class="hamburger" id="hamburger">&#9776;</button>
+        </nav>
+    </div>
+</header>
+
+<section class="portfolio-hero">
+    <div class="container">
+        <h2>作品集</h2>
+    </div>
+</section>
+
+<!-- Projects Section-->
+<section class="py-5">
+    <div class="container px-5">
+        <!-- 分類按鈕 -->
+        <div class="text-center mb-4">
+            <button class="category-tab active" data-category="painting">繪畫</button>
+            <button class="category-tab" data-category="video">剪輯</button>
+            <button class="category-tab" data-category="animation">動畫</button>
+            <button class="category-tab" data-category="layout">排版</button>
+        </div>
+
+        <!-- 作品項目 -->
+        <div class="row gx-4 gy-4 justify-content-center">
+
+            <!-- Painting items (全部加上 data-category="painting") -->
+            <div class="col-6 col-md-3 portfolio-item" data-category="painting">
+                <img class="img-fluid rounded-4 gallery-img" src="https://pbs.twimg.com/media/F313e3YagAAaEVE?format=jpg&name=large" alt="Image 1" data-title="2023年8月19日" />
+            </div>
+
+            <div class="col-6 col-md-3 portfolio-item" data-category="painting">
+                <img class="img-fluid rounded-4 gallery-img" src="https://pbs.twimg.com/media/F6LcZCtaMAAUGQf?format=jpg&name=large" alt="Image 2" data-title="2023年9月17日" />
+            </div>
+
+            <div class="col-6 col-md-3 portfolio-item" data-category="painting">
+                <img class="img-fluid rounded-4 gallery-img" src="https://pbs.twimg.com/media/GBt9tfbboAAik48?format=jpg&name=4096x4096" alt="Image 3" data-title="2023年12月19日" />
+            </div>
+
+            <div class="col-6 col-md-3 portfolio-item" data-category="painting">
+                <img class="img-fluid rounded-4 gallery-img" src="https://pbs.twimg.com/media/GDjSgyRbkAAlT_W?format=jpg&name=4096x4096" alt="Image 4" data-title="2024年1月11日" />
+            </div>
+
+            <div class="col-6 col-md-3 portfolio-item" data-category="painting">
+                <img class="img-fluid rounded-4 gallery-img" src="https://pbs.twimg.com/media/GMRKK9kbUAAEJD8?format=jpg&name=4096x4096" alt="Image 5" data-title="2024年4月29日" />
+            </div>
+
+            <div class="col-6 col-md-3 portfolio-item" data-category="painting">
+                <img class="img-fluid rounded-4 gallery-img" src="https://pbs.twimg.com/media/GMWQwDga4AEbCzi?format=jpg&name=4096x4096" alt="Image 6" data-title="2024年4月30日" />
+            </div>
+
+            <div class="col-6 col-md-3 portfolio-item" data-category="painting">
+                <img class="img-fluid rounded-4 gallery-img" src="https://pbs.twimg.com/media/GMbSlM3bcAA1xWd?format=jpg&name=4096x4096" alt="Image 7" data-title="2024年5月1日" />
+            </div>
+
+            <div class="col-6 col-md-3 portfolio-item" data-category="painting">
+                <img class="img-fluid rounded-4 gallery-img" src="https://pbs.twimg.com/media/GNqQXm0bsAAnSg7?format=jpg&name=large" alt="Image 8" data-title="2024年5月16日" />
+            </div>
+
+            <div class="col-6 col-md-3 portfolio-item" data-category="painting">
+                <img class="img-fluid rounded-4 gallery-img" src="https://pbs.twimg.com/media/GN8JHTAbMAA24ht?format=jpg&name=medium" alt="Image 9" data-title="2024年5月20日" />
+            </div>
+
+            <div class="col-6 col-md-3 portfolio-item" data-category="painting">
+                <img class="img-fluid rounded-4 gallery-img" src="https://pbs.twimg.com/media/GX2VrBZaEAAS1zd?format=jpg&name=medium" alt="Image 10" data-title="2024年9月19日" />
+            </div>
+
+            <div class="col-6 col-md-3 portfolio-item" data-category="painting">
+                <img class="img-fluid rounded-4 gallery-img" src="https://pbs.twimg.com/media/GYUtNSMaMAAIdGl?format=jpg&name=large" alt="Image 11" data-title="2024年9月25日" />
+            </div>
+
+            <div class="col-6 col-md-3 portfolio-item" data-category="painting">
+                <img class="img-fluid rounded-4 gallery-img" src="https://pbs.twimg.com/media/GYn2JFyaMAAQcNt?format=jpg&name=large" alt="Image 12" data-title="2024年9月29日" />
+            </div>
+
+            <div class="col-6 col-md-3 portfolio-item" data-category="painting">
+                <img class="img-fluid rounded-4 gallery-img" src="https://pbs.twimg.com/media/GZS-JNzagAAJaW8?format=png&name=small" alt="Image 13" data-title="2024年10月7日" />
+            </div>
+
+            <div class="col-6 col-md-3 portfolio-item" data-category="painting">
+                <img class="img-fluid rounded-4 gallery-img" src="https://pbs.twimg.com/media/GabWFDkbEAQmrX9?format=jpg&name=medium" alt="Image 14" data-title="2024年10月22日" />
+            </div>
+
+            <div class="col-6 col-md-3 portfolio-item" data-category="painting">
+                <img class="img-fluid rounded-4 gallery-img" src="https://pbs.twimg.com/media/Gb4suWaasAA8ucm?format=jpg&name=4096x4096" alt="Image 15" data-title="2024年11月9日" />
+            </div>
+
+            <div class="col-6 col-md-3 portfolio-item" data-category="painting">
+                <img class="img-fluid rounded-4 gallery-img" src="https://pbs.twimg.com/media/GccVbwuaMAEnYCG?format=png&name=900x900" alt="Image 16" data-title="2024年11月16日" />
+            </div>
+
+            <div class="col-6 col-md-3 portfolio-item" data-category="painting">
+                <img class="img-fluid rounded-4 gallery-img" src="https://pbs.twimg.com/media/Gc_rYX7bsAER6YO?format=jpg&name=medium" alt="Image 17" data-title="2024年11月22日" />
+            </div>
+
+            <div class="col-6 col-md-3 portfolio-item" data-category="painting">
+                <img class="img-fluid rounded-4 gallery-img" src="https://pbs.twimg.com/media/Gd6InbHbkAAsjfB?format=jpg&name=medium" alt="Image 18" data-title="2024年12月4日" />
+            </div>
+
+            <div class="col-6 col-md-3 portfolio-item" data-category="painting">
+                <img class="img-fluid rounded-4 gallery-img" src="https://pbs.twimg.com/media/Gd-2TmqakAA8_DJ?format=jpg&name=medium" alt="Image 19" data-title="2024年12月8日" />
+            </div>
+
+            <div class="col-6 col-md-3 portfolio-item" data-category="painting">
+                <img class="img-fluid rounded-4 gallery-img" src="https://pbs.twimg.com/media/GebVZQpagAAbFLg?format=jpg&name=medium" alt="Image 20" data-title="2024年12月15日" />
+            </div>
+
+            <!-- 範例動畫、剪輯、排版類作品(請按實際修改) -->
+            <div class="col-6 col-md-3 portfolio-item" data-category="animation">
+                <img class="img-fluid rounded-4 gallery-img" src="https://example.com/animation1.png" alt="Animation Example" />
+            </div>
+            <div class="col-6 col-md-3 portfolio-item" data-category="video">
+                <img class="img-fluid rounded-4 gallery-img" src="https://example.com/video1.png" alt="Video Example" />
+            </div>
+            <div class="col-6 col-md-3 portfolio-item" data-category="layout">
+                <img class="img-fluid rounded-4 gallery-img" src="https://example.com/layout1.png" alt="Layout Example" />
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<script>
+    // 選取所有分類按鈕及作品項目
+    const tabs = document.querySelectorAll('.category-tab');
+    const items = document.querySelectorAll('.portfolio-item');
+
+    // 篩選函式，顯示選中類別，其他隱藏
+    function filterCategory(category) {
+        items.forEach(item => {
+            if (item.dataset.category === category) {
+                item.style.display = 'block';
+            } else {
+                item.style.display = 'none';
+            }
+        });
+    }
+
+    // 點擊事件綁定
+    tabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+            tabs.forEach(t => t.classList.remove('active'));
+            tab.classList.add('active');
+
+            filterCategory(tab.dataset.category);
+        });
+    });
+
+    // 頁面載入時預設篩選
+    window.addEventListener('DOMContentLoaded', () => {
+        filterCategory('painting');
+    });
+</script>
+
+</body>
+</html>
