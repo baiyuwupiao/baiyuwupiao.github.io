@@ -6,6 +6,17 @@
     <title>DByu工作室</title>
     <link rel="stylesheet" href="style.css" />
     <script defer src="script.js"></script>
+    <style>
+        .portfolio-item iframe,
+        .portfolio-item blockquote.twitter-tweet {
+            max-width: 100%;
+            width: 100%;
+            height: auto;
+            margin: 0 auto;
+            display: block;
+        }
+
+    </style>
 </head>
 <body>
 <header>
@@ -24,8 +35,8 @@
 
 <section class="hero">
     <div class="container">
-        <h2>這裡是一句吸引人的口號</h2>
-        <p>我們致力於創造令人印象深刻的網頁與互動體驗</p>
+        <h2>未成立的工作室，但已經開始創作</h2>
+        <p>這是一個工作室介紹以及作品集的模擬網頁</p>
         <a href="portfolio.html" class="btn">查看我們的作品</a>
     </div>
 </section>
@@ -37,12 +48,12 @@
             <p>能夠繪製人物插畫，從全身立繪、角色半身圖、背景橫幅、頭像等均有涉略。</p>
         </div>
         <div class="feature-card">
-            <h4>動畫製作與剪輯</h4>
-            <p>曾參與多項剪輯項目，能夠完成大多剪輯項目，並持續挑戰製作動畫短片。</p>
+            <h4>動畫製作</h4>
+            <p>挑戰製作動畫短片，從分鏡設計到動態表現，逐步拓展視覺敘事的可能性。</p>
         </div>
         <div class="feature-card">
-            <h4>排版與視覺設計</h4>
-            <p>具備多種媒材排版經驗，包含書頁設計、海報、影片縮圖等。</p>
+            <h4>影片剪輯</h4>
+            <p>擁有多項剪輯實務經驗，能勝任大多數影片節奏調整、字幕配合與視覺效果處理工作。</p>
         </div>
     </div>
 </section>
@@ -51,9 +62,54 @@
     <div class="container">
         <h3>精選作品</h3>
         <div class="portfolio-grid">
-            <div class="portfolio-item">作品 1</div>
-            <div class="portfolio-item">作品 2</div>
-            <div class="portfolio-item">作品 3</div>
+
+            <!-- 作品 1：圖片 -->
+            <div class="portfolio-item">
+                <img src="assets/GYn2JFyaMAAQcNt.png" alt="作品 1" style="width:100%; height:auto; border-radius:8px;">
+            </div>
+
+            <!-- 作品 2：可播放影片（YouTube 或 Twitter）-->
+            <div class="portfolio-item">
+                <!-- YouTube 嵌入範例 -->
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/hW0UKtrcAow"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+
+                <!-- 或 Twitter 影片嵌入（只用一個）-->
+                <!--
+                <blockquote class="twitter-tweet" data-media-max-width="560">
+                    <p lang="en" dir="ltr">im sorry but its too funny 😭<br>
+                    <a href="https://twitter.com/hashtag/inART?src=hash&amp;ref_src=twsrc%5Etfw">#inART</a>
+                    <a href="https://twitter.com/hashtag/%E3%81%84%E3%81%AA%E3%83%BC%E3%83%88?src=hash&amp;ref_src=twsrc%5Etfw">#いなート</a>
+                    <a href="https://t.co/dSuXbf9Zk7">pic.twitter.com/dSuXbf9Zk7</a></p>&mdash; baiyᵁʷᵁ (@BaiyuPiao)
+                    <a href="https://twitter.com/BaiyuPiao/status/1835275106408661335?ref_src=twsrc%5Etfw">September 15, 2024</a>
+                </blockquote>
+                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                -->
+            </div>
+
+            <!-- 作品 3：圖片 -->
+            <div class="portfolio-item">
+                <!-- YouTube 嵌入範例 -->
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/PEvin5zqO6c"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+
+                <!-- 或 Twitter 影片嵌入（只用一個）-->
+                <!--
+                <blockquote class="twitter-tweet" data-media-max-width="560">
+                    <p lang="en" dir="ltr">im sorry but its too funny 😭<br>
+                    <a href="https://twitter.com/hashtag/inART?src=hash&amp;ref_src=twsrc%5Etfw">#inART</a>
+                    <a href="https://twitter.com/hashtag/%E3%81%84%E3%81%AA%E3%83%BC%E3%83%88?src=hash&amp;ref_src=twsrc%5Etfw">#いなート</a>
+                    <a href="https://t.co/dSuXbf9Zk7">pic.twitter.com/dSuXbf9Zk7</a></p>&mdash; baiyᵁʷᵁ (@BaiyuPiao)
+                    <a href="https://twitter.com/BaiyuPiao/status/1835275106408661335?ref_src=twsrc%5Etfw">September 15, 2024</a>
+                </blockquote>
+                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                -->
+            </div>
+
         </div>
     </div>
 </section>
@@ -63,7 +119,7 @@
         <h3>我們的團隊</h3>
         <div class="team-grid">
             <div class="team-member">
-                <img src="https://via.placeholder.com/150" alt="Member 1" />
+                <img src="assets/wavatar.png" alt="Member 1" />
                 <h4>BaiyUwU</h4>
                 <p>繪畫、動畫及剪輯、影片縮圖</p>
                 <div class="social-icons">
@@ -79,7 +135,7 @@
                 </div>
             </div>
             <div class="team-member">
-                <img src="https://via.placeholder.com/150" alt="Member 2" />
+                <img src="assets/wavatar.png" alt="Member 2" />
                 <h4>友人w</h4>
                 <p>剪輯、排版、海報</p>
             </div>
